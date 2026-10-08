@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="navHeader">
+        <a href="#"><img src="assets/images/img6.png" alt="logo" width="70" height="70"></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#" class="active">Contact</a>
+           <div class="dropDownWrapper">
+            <a href="sevices.html">Services</a>
+            <div class="dropDown">
+              <nav>
+              <a href="#">Web dev</a>
+              <a href="#">Call Cente</a>
+              <a href="#">Procurement</a>
+              <a href="#">Hosting</a>
+            </nav>
+            </div>
+            
+          </div>
+
+          <a href="gallary.html">Gallary</a>
+         </nav>
+
+         <img src="assets/images/burger.svg" alt="burger" id="toggle">
+     </header>
+
+    <header class="pageHero">
+        <h1>Contact us</h1>
+        <h2>Ways to reach us</h2>
+        <h3>Fill the form to inform us</h3>
+    </header>
+    <main>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div>
+            <form method="get" onsubmit="alert('Iam here now')">
+                <label for="names">Names</label>
+                <input type="text" id="names" name="names" placeholder="Names" tabindex="0" autofocus="true" autocapitalize="true" autocomplete="true" />
+                <label for="password" id="password">Password</label>
+                <input type="password" id="password" placeholder="*********" tabindex="1"
+                 minlength="6" maxlength="15"/>
+
+                <label for="email" id="email">Email</label>
+                <input type="email" name="email" placeholder="*********" tabindex="3" minlength="7"/>
+
+                <label for="color">Color</label>
+                <input type="color" tabindex="4" required />
+
+                <label for="datetime">Date time</label>
+                <input type="datetime-local" name="datetime" tabindex="5"/>
+
+                <label for="file">File</label>
+                <input type="file"  id="file" name="file" required accept="*"/>
+
+                <label for="search">Search</label>
+                <input type="search"  id="search" name="search" required placeholder="search here"/>
+
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male"/>
+
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female"/>
+
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Option</legend>
+                    <label for="kiwi">Kiwi</label>
+                    <input type="checkbox" id="kiwi" name="kiwi"/>
+
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" id="orange" name="orange"/>
+
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" id="banana" name="banana"/>
+
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" id="apple" name="apple"/>
+                </fieldset>
+
+                <select name="select" id="select">
+                    <option value="" selected disabled>--select--</option>
+                    <option value="kiwi">Kiwi</option>
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="orange">Orange</option>
+                    <option value="plum">Plum</option>
+                </select>
+
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" id="browser" name="browser"/>
+
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="chrome"></option>
+                    <option value="opera"></option>
+                    <option value="safari"></option>
+                    <option value="firefox"></option>
+                </datalist>
+
+                <label for="msg">Message</label>
+                <textarea
+                 name="msg" 
+                 id="msg" 
+                 placeholder="Leave a Message here"
+                 cols="25"
+                 rows="5"
+                 ></textarea>
+
+                 <button type="submit" class="send">Send</button>
+                 <button type="reset" class="reset">Reset</button>
+
+            </form>
+        </div>
+
+        <details open>
+            <summary>How is the program</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quaerat sequi itaque dignissimos earum temporibus doloribus autem suscipit odit cumque. Maxime commodi fuga quasi culpa ipsa voluptate, nobis quas dicta?
+            </p>
+        </details>
+
+        <details>
+            <summary>How is the program</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quaerat sequi itaque dignissimos earum temporibus doloribus autem suscipit odit cumque. Maxime commodi fuga quasi culpa ipsa voluptate, nobis quas dicta?
+            </p>
+        </details>
+
+        <details>
+            <summary>How is the program</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quaerat sequi itaque dignissimos earum temporibus doloribus autem suscipit odit cumque. Maxime commodi fuga quasi culpa ipsa voluptate, nobis quas dicta?
+            </p>
+        </details>
+    </main>
+
+    <footer><p>&copy;&nbsp;mrsoft</p></footer>
+    </body>
+</html>
+    

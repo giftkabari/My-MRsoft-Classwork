@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   /* border: 1px solid red;*/
+}
+
+.navHeader{
+background-color: rgb(130, 131, 106);
+padding: 1rem 4rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/*position: fixed;*/
+position: sticky;
+z-index: 2;
+top: 0;
+width: 100%;
+}
+
+.navHeader > nav{
+display: none;
+}
+
+.navHeader  nav  a {
+text-decoration: none;
+padding: 1.5rem;
+color: rgb(228, 225, 225);
+text-transform: uppercase;
+transition: all 2s;
+}
+
+.navHeader  nav a:hover{
+    font-size: 1.3rem;
+    background-color: rgb(17, 16, 16);
+    color: rgb(253, 244, 244);
+}
+
+/* .navHeader > nav > a:active{
+    color: chartreuse;
+} */
+
+/* .navHeader > nav > a:visited{
+    color: rgb(206, 88, 10);
+} */
+/* working on the dropdown for services */
+.dropDown{
+    display: none;
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropDown > nav > a{
+    display: block;
+    color: #ffffff;
+    margin-block-start: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.dropDownWrapper{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.dropDownWrapper:hover > .dropDown{
+display: block;
+}
+
+.dropDownWrapper a{
+    text-decoration: none;
+}
+
+/* .dropDownWrapper > a{ trying to style the services specially to look like the other nav links but we call it on the general navlinks styles by removing >
+    padding: 1.5rem;
+color: rgb(228, 225, 225);
+text-transform: uppercase;
+transition: all 2s;
+}
+
+.dropDownWrapper > a:hover{
+    /* font-size: 1.3rem;
+    background-color: rgb(17, 16, 16);
+    color: rgb(253, 244, 244); 
+} */
+
+#heroHeader{
+height: 100vh;
+background-image: url(../images/img4.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+background-position:center;
+display: flex;
+align-items: center;
+justify-content: center;
+/*flex-direction: column;*/
+}
+
+#heroHeader div{
+    background-color: rgba(0,0, 0,0.6);
+    color: #ffffff;
+    padding: 2rem;
+    box-shadow: 2px 1px 9px 0;
+    border-radius: 19px;
+}
+
+#heroHeader > div > h1{
+    /* animation:  duration timing-function delay iteration-count direction fill-mode; */
+    animation:animate 2s infinite alternate ;
+
+}
+
+@keyframes animate {
+    0%{
+        color: blueviolet;
+        font-size: larger;
+    }
+
+    25%{
+        color: black;
+        font-size: 900;
+    }
+
+    50%{
+        color: brown;
+        font-size: x-large;
+    }
+
+    75%{
+        color: aquamarine;
+        font-size: xx-large;
+    }
+
+    100%{
+        color: crimson;
+        font-size: xx-small;
+    }
+}
+
+
+
+.sec > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.sec > div > div > div >img {
+    width: 100%;
+    max-width: 500px;
+    border-radius:  1rem 1rem 0 0;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.sec > div > div > div > img:hover{
+    transform: scale(1.3);
+}
+
+.img-wrapper{
+border-radius: 1rem 1rem 0 0; /*today*/
+overflow: hidden;
+height: 200px;
+}
+
+.sec > div > div > div{
+    overflow: hidden;
+}
+
+.sec > div > div > div > p{
+padding: 1rem;
+}
+
+.circle {
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: brown;
+color: white;
+border-radius: 360px;
+
+position: absolute;
+right: -30px;
+top: -30px;
+z-index: 1;
+}
+
+.sec > div > div{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 9px 0 gray;
+    border-radius:  1rem 1rem 0 0; 
+}
+
+
+
+.sec2{
+    margin:5rem 2rem 3rem ;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.secondMarquee{
+    padding: 1rem;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+article{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: beige;
+    line-height: 1.8rem;
+    word-spacing: 0.4rem;
+}
+
+.pageHero{
+    padding: 9rem 3rem 5rem;
+    color: #ffffff;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0)50%, rgba(15,70,25,0.9)0%), url("../images/img5.jpg") no-repeat center ;
+    background-size: 100%;
+}
+
+.aboutus > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 4rem;
+}
+
+.aboutus > div > div{
+    width: 100%;
+    max-width: 500px;
+}
+
+.aboutus > div > div img{
+    width: 100%;
+}
+
+.media{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+}
+
+.media > div{
+    width: 100%;
+    max-width: 500px;
+}
+
+.media > div > video .media > div > audio {
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    overflow: auto;
+}
+
+.table table{
+    margin: 0 auto;   /*to make the table centralised*/
+}
+
+.table table, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 0.5em;
+    margin-block: 3rem;
+}
+
+.table tr:nth-child(even){
+    background-color: rgb(231, 169, 46);
+}
+
+.table tr:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+main {
+    margin: 2rem;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+input[type=text], input[type=password],input[type=email], input[type=datetime-local], input[type=file], input[type=search], select, textarea{
+    display: block;
+    width: 100%;
+    margin-block: 0.5rem;
+    padding: 1rem 0.5rem ;
+}
+
+button{
+    padding: 1rem 2rem;
+    border: none;
+    margin-block-start: 1rem;
+}
+
+.send{
+    background-color: blue;
+}
+
+.reset{
+    background-color: red;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 3rem;
+}
+
+.grid > div{
+    background-color: azure;
+    border: 1px solid rebeccapurple;
+    padding: 3rem;
+}
+
+fieldset{
+    padding: 1rem;
+
+}
+
+.active{
+    text-decoration:double !important;
+    color: blueviolet !important;
+    transform: scale(0.4rem) !important;
+}
+
+
+footer{
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width:678px) {
+    #toggle{
+    display: none;
+}
+
+.navHeader > nav{
+display: inline-block;
+}
+
+
+}
+
