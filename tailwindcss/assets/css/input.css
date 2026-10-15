@@ -5,5 +5,33 @@
 
   nav {
     @apply flex gap-2;
+
+    a {
+      @apply uppercase;
+    }
   }
 }
+
+.heroHeader {
+  @apply h-dvh text-white flex justify-center items-center bg-[url(../img/img2.jpg)]  bg-linear-to-r from-cyan-500 to-blue-500 bg-center bg-no-repeat bg-cover;
+}
+
+main {
+  @apply m-9;
+}
+
+.section1 {
+  > div {
+    @apply flex gap-10;
+
+    > div {
+      @apply border border-1 border-red-500 bg-red-50 py-4 px-3 rounded-lg;
+
+      > div img {
+        @apply h-[300px] border w-[100%];
+      }
+    }
+  }
+}
+
+/*  npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch */
