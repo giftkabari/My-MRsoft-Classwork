@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.navHeader {
+  @apply flex justify-between items-center bg-gray-900 p-2 text-white;
+
+  nav {
+    @apply flex gap-2;
+  }
+}
